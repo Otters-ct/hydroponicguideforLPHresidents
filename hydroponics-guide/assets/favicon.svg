@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img">
+  <title>Site icon</title>
+  <rect width="64" height="64" rx="14" fill="#081A12"/>
+  <path d="M46 16c-16 0-26 10-26 26 16 0 26-10 26-26z" fill="#E8B85B"/>
+  <path d="M22 46 44 22" stroke="#081A12" stroke-width="4" stroke-linecap="round"/>
+</svg>
