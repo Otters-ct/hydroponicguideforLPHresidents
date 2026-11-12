@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="meta.title">居家水培植物指南｜用不透光瓶子在家種羅勒</title>
+<meta name="description" content="掃描瓶身 QR code 的家居水培指南：7 步開始種植、每週照顧、影片教學、疑難排解，以及購買補充品。被動式水培法（Kratky 方法），無需水泵或電力。" data-i18n-attr="content:meta.description">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#081A12">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="居家水培植物指南">
+<meta property="og:title" content="居家水培植物指南" data-i18n-attr="content:meta.ogTitle">
+<meta property="og:description" content="用一個不透光瓶子，在家種出新鮮羅勒。無水泵、無電力、不用天天澆水。" data-i18n-attr="content:meta.ogDescription">
+<meta property="og:image" content="https://otters-ct.github.io/hydroponicguideforLPHresidents/assets/og-image.png">
+<meta property="og:locale" content="zh_HK">
+<meta property="og:url" content="https://otters-ct.github.io/hydroponicguideforLPHresidents/">
+
+<!-- hreflang -->
+<link rel="alternate" hreflang="zh-HK" href="https://otters-ct.github.io/hydroponicguideforLPHresidents/?lang=zh-HK">
+<link rel="alternate" hreflang="zh-CN" href="https://otters-ct.github.io/hydroponicguideforLPHresidents/?lang=zh-CN">
+<link rel="alternate" hreflang="en" href="https://otters-ct.github.io/hydroponicguideforLPHresidents/?lang=en">
+<link rel="alternate" hreflang="x-default" href="https://otters-ct.github.io/hydroponicguideforLPHresidents/">
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+
+<!-- If JavaScript is off, the switcher would be a dead control. Hide it. -->
+<noscript><style>.lang-switch{display:none !important}</style></noscript>
+</head>
+<body>
+
+<!-- ===== Icon sprite (decorative, hidden) ===== -->
+<svg class="sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+  <symbol id="i-bottle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M10 2h4v3l1.5 2.5V20a2 2 0 0 1-2 2h-3a2 2 0 0 1-2-2V7.5L10 5z"/>
+    <path d="M8.5 13h7"/>
+  </symbol>
+  <symbol id="i-seed" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="12" cy="13" rx="5" ry="7"/>
+    <path d="M12 7v12"/>
+  </symbol>
+  <symbol id="i-sprout" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 21v-9"/>
+    <path d="M12 12c0-4 3-6 7-6 0 4-3 6-7 6z"/>
+    <path d="M12 15c0-3-2.5-5-6-5 0 3 2.5 5 6 5z"/>
+  </symbol>
+  <symbol id="i-cap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M3 8h18v3H3z"/>
+    <path d="M4 11h16v6a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3z"/>
+  </symbol>
+  <symbol id="i-pot" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M6 3h12l-1.5 18h-9z"/>
+    <path d="M7.5 8h9"/>
+    <path d="M7 13h10"/>
+    <path d="M6.8 18h10.4"/>
+  </symbol>
+  <symbol id="i-drop" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 3s6 7 6 11a6 6 0 0 1-12 0c0-4 6-11 6-11z"/>
+  </symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="4"/>
+    <path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/>
+  </symbol>
+  <symbol id="i-root" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 2v6"/>
+    <path d="M12 8c-3.5 0-5.5 2-5.5 5v4"/>
+    <path d="M12 8c3.5 0 5.5 2 5.5 5v4"/>
+    <path d="M12 13v6"/>
+  </symbol>
+  <symbol id="i-algae" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M3 8c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/>
+    <path d="M3 13c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/>
+    <path d="M3 18c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/>
+  </symbol>
+  <symbol id="i-leaf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M20 4C10 4 4 10 4 20c10 0 16-6 16-16z"/>
+    <path d="M8 16 20 4"/>
+  </symbol>
+  <symbol id="i-storm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M7 15a4 4 0 0 1 .6-8 5.5 5.5 0 0 1 10.3 1.6A3.5 3.5 0 0 1 17.5 15z"/>
+    <path d="M13 15l-2 4h3l-2 4"/>
+  </symbol>
+  <symbol id="i-cart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M3 4h2l2.5 11h11L21 7H6"/>
+    <circle cx="9" cy="19" r="1.5"/>
+    <circle cx="18" cy="19" r="1.5"/>
+  </symbol>
+  <symbol id="i-shop" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M3 9l2-5h14l2 5"/>
+    <path d="M4 9v11h16V9"/>
+    <path d="M9 20v-6h6v6"/>
+  </symbol>
+  <symbol id="i-help" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="9"/>
+    <path d="M9.5 9.5a2.5 2.5 0 1 1 3.4 2.3c-.6.3-.9.8-.9 1.4v.6"/>
+    <path d="M12 17.2h.01"/>
+  </symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 3l9 17H3z"/>
+    <path d="M12 9v5"/>
+    <path d="M12 17.5h.01"/>
+  </symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="9"/>
+    <path d="M3 12h18"/>
+    <path d="M12 3c2.5 2.5 3.8 5.6 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.6-3.8-9S9.5 5.5 12 3z"/>
+  </symbol>
+  <symbol id="i-play" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M8.5 5.6 18.5 12 8.5 18.4z"/>
+  </symbol>
+  <symbol id="i-recycle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M7 19H5a2 2 0 0 1-1.7-3l1.6-2.7"/>
+    <path d="M11.2 4.6a2 2 0 0 1 3.4 0l1.5 2.6"/>
+    <path d="M17 19h2a2 2 0 0 0 1.7-3l-3.2-5.4"/>
+    <path d="M9 15.8 7 19l3.6 1"/>
+    <path d="M16.4 7.2 14.9 11l-4-.4"/>
+  </symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11z"/>
+    <circle cx="12" cy="10" r="2.5"/>
+  </symbol>
+  <symbol id="i-external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M14 4h6v6"/>
+    <path d="M20 4l-8 8"/>
+    <path d="M19 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"/>
+  </symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M6 3h3l2 5-2.5 1.5a12 12 0 0 0 6 6L16 13l5 2v3a2 2 0 0 1-2.2 2A17 17 0 0 1 4 5.2 2 2 0 0 1 6 3z"/>
+  </symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="9"/>
+    <path d="M12 7v5l3.5 2"/>
+  </symbol>
+  <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="9" cy="8" r="3.2"/>
+    <path d="M3.5 20a5.5 5.5 0 0 1 11 0"/>
+    <path d="M16.5 5.6a3.2 3.2 0 0 1 0 6.2"/>
+    <path d="M17.5 14.5A5.5 5.5 0 0 1 20.5 20"/>
+  </symbol>
+  <symbol id="i-hands" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 19.4S6 15.7 6 11.9A3.5 3.5 0 0 1 12 9.4a3.5 3.5 0 0 1 6 2.5c0 3.8-6 7.5-6 7.5z"/>
+    <path d="M3.5 13.6v4.5a1.4 1.4 0 0 0 1.4 1.4h2.5"/>
+    <path d="M20.5 13.6v4.5a1.4 1.4 0 0 1-1.4 1.4h-2.5"/>
+  </symbol>
+  <symbol id="i-whatsapp" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M20.5 11.7a8.5 8.5 0 0 1-12.6 7.4L3.5 20.5l1.4-4.3A8.5 8.5 0 1 1 20.5 11.7z"/>
+    <path d="M9.1 8.6c-.5.1-.9.6-.9 1.2 0 2.9 2.4 5.3 5.3 5.3.6 0 1.1-.4 1.2-.9.1-.4-.1-.8-.4-1l-1.2-.5-.9.8a4.6 4.6 0 0 1-2.3-2.3l.8-.9-.5-1.2c-.2-.4-.6-.6-1.1-.5z"/>
+  </symbol>
+</svg>
+
+<a class="skip-link" href="#main" data-i18n="a11y.skip">跳至主要內容</a>
+
+<!-- ===== Header ===== -->
+<header class="site-header">
+  <div class="header-bar">
+    <a class="brand" href="#hero">
+      <span class="brand-mark" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><use href="#i-leaf"></use></svg></span>
+      <span class="brand-text">
+        <span class="brand-name" data-i18n="brand.short">居家水培</span>
+        <span class="brand-tag" data-i18n="brand.tagline">啟德社區種植計劃</span>
+      </span>
+    </a>
+
+    <div class="lang-switch" id="lang-switch" role="group" aria-label="語言選擇" data-i18n-attr="aria-label:a11y.langGroup">
+      <span class="lang-globe" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><use href="#i-globe"></use></svg></span>
+      <button type="button" class="lang-btn" data-lang="zh-HK" aria-current="true" aria-label="繁體中文（香港）" data-i18n="lang.zhHK" data-i18n-attr="aria-label:lang.zhHKAria">繁體</button>
+      <button type="button" class="lang-btn" data-lang="zh-CN" aria-label="簡體中文" data-i18n="lang.zhCN" data-i18n-attr="aria-label:lang.zhCNAria">简体</button>
+      <button type="button" class="lang-btn" data-lang="en" aria-label="英文 English" data-i18n="lang.en" data-i18n-attr="aria-label:lang.enAria">EN</button>
+    </div>
+  </div>
+
+  <nav class="site-nav" aria-label="主要導航" data-i18n-attr="aria-label:nav.label">
+    <ul>
+      <li><a href="#start" data-i18n="nav.start">開始種植</a></li>
+      <li><a href="#weekly" data-i18n="nav.weekly">每週照顧</a></li>
+      <li><a href="#videos" data-i18n="nav.videos">影片教學</a></li>
+      <li><a href="#trouble" data-i18n="nav.trouble">疑難排解</a></li>
+      <li><a href="#harvest" data-i18n="nav.harvest">採收</a></li>
+      <li><a href="#buy" data-i18n="nav.buy">購買補充品</a></li>
+      <li><a href="#faq" data-i18n="nav.faq">常見問題</a></li>
+      <li><a href="#contact" data-i18n="nav.contact">工作坊／聯絡</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Language change announcement for screen readers -->
+<p id="lang-status" class="visually-hidden" role="status" aria-live="polite"></p>
+
+<main id="main">
+
+  <!-- ===== 1. Hero ===== -->
+  <section class="hero" id="hero">
+    <div class="wrap hero-inner">
+      <p class="eyebrow">
+        <svg class="icon" aria-hidden="true"><use href="#i-sprout"></use></svg>
+        <span data-i18n="brand.tagline">啟德社區種植計劃</span>
+      </p>
+      <h1 data-i18n="hero.title">居家水培植物指南</h1>
+      <p class="lede" data-i18n="hero.subtitle">用一個不透光瓶子，在家種出新鮮羅勒</p>
+      <p class="hero-actions">
+        <a class="btn btn-primary" href="#start" data-i18n="hero.ctaStart">開始種植</a>
+        <a class="btn btn-secondary" href="#videos" data-i18n="hero.ctaVideo">觀看影片教學</a>
+      </p>
+      <p class="hero-note">
+        <svg class="icon" aria-hidden="true"><use href="#i-help"></use></svg>
+        <span data-i18n="hero.qrNote">掃描瓶身 QR code 即可回到本頁</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== 2. Stats / trust ===== -->
+  <section class="stats" id="stats" aria-labelledby="stats-h">
+    <div class="wrap">
+      <h2 class="stats-title" id="stats-h" data-i18n="stats.title">簡單方法，真實效果</h2>
+      <ul class="stats-grid">
+        <li class="stat">
+          <svg class="icon stat-icon" aria-hidden="true"><use href="#i-recycle"></use></svg>
+          <span class="stat-num" data-i18n="stats.s1w">100%</span>
+          <span class="stat-label" data-i18n="stats.s1l">可回收瓶使用</span>
+        </li>
+        <li class="stat">
+          <svg class="icon stat-icon" aria-hidden="true"><use href="#i-sun"></use></svg>
+          <span class="stat-num" data-i18n="stats.s2w">0</span>
+          <span class="stat-label" data-i18n="stats.s2l">電費</span>
+        </li>
+        <li class="stat">
+          <svg class="icon stat-icon" aria-hidden="true"><use href="#i-drop"></use></svg>
+          <span class="stat-num" data-i18n="stats.s3w">1 吋</span>
+          <span class="stat-label" data-i18n="stats.s3l">浸水深度</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== 3. Two golden rules (repeated reminder) ===== -->
+  <section class="rules" id="rules" aria-labelledby="rules-h">
+    <h2 class="visually-hidden" id="rules-h" data-i18n="rules.title">記住兩件事</h2>
+    <div class="wrap rules-box">
+      <svg class="icon icon-lg" aria-hidden="true"><use href="#i-alert"></use></svg>
+      <ul class="rules-list">
+        <li><span class="rule-mark">✓</span> <strong data-i18n="rules.rule1">底部 1 吋浸水</strong></li>
+        <li><span class="rule-mark">✕</span> <strong data-i18n="rules.rule2">之後不要補水</strong></li>
+      </ul>
+      <p class="rules-note" data-i18n="rules.note">根的下半部要浸在水裡。水面下降後，就不要再加水。</p>
+    </div>
+  </section>
+
+  <!-- ===== 4. Quick start ===== -->
+  <section class="section" id="start" aria-labelledby="start-h">
+    <div class="wrap">
+      <h2 id="start-h" data-i18n="quick.title">開始種植</h2>
+      <p class="print-only print-heading" data-i18n="print.heading">居家水培快速指南</p>
+      <p data-i18n="quick.intro">準備好材料，跟著 7 個步驟做。</p>
+
+      <h3 class="sub-h" data-i18n="quick.kitTitle">套裝內容</h3>
+      <ul class="kit-list">
+        <li><svg class="icon" aria-hidden="true"><use href="#i-bottle"></use></svg><span data-i18n="quick.kit1">2 公升不透光瓶</span></li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-pot"></use></svg><span data-i18n="quick.kit2">網盆</span></li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-algae"></use></svg><span data-i18n="quick.kit3">海綿</span></li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-seed"></use></svg><span data-i18n="quick.kit4">發芽塊</span></li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-sprout"></use></svg><span data-i18n="quick.kit5">羅勒種子</span></li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-drop"></use></svg><span data-i18n="quick.kit6">葉菜營養液</span></li>
+      </ul>
+
+      <h3 class="sub-h" data-i18n="quick.stepsTitle">7 個步驟</h3>
+      <ol class="step-list">
+        <li class="card step">
+          <span class="step-num" aria-hidden="true">1</span>
+          <svg class="icon icon-lg" aria-hidden="true"><use href="#i-bottle"></use></svg>
+          <h4 data-i18n="quick.s1t">準備容器</h4>
+          <p data-i18n="quick.s1b">用不透光、食品級容器，容量 1–4 公升。回收瓶要用黑膠紙、錫紙或深色套包好。</p>
+        </li>
+        <li class="card step">
+          <span class="step-num" aria-hidden="true">2</span>
+          <svg class="icon icon-lg" aria-hidden="true"><use href="#i-seed"></use></svg>
+          <h4 data-i18n="quick.s2t">發芽</h4>
+          <p data-i18n="quick.s2b">在濕潤的發芽塊放 1–2 粒種子，等 3–7 日。</p>
+        </li>
+        <li class="card step">
+          <span class="step-num" aria-hidden="true">3</span>
+          <svg class="icon icon-lg" aria-hidden="true"><use href="#i-sprout"></use></svg>
+          <h4 data-i18n="quick.s3t">移苗</h4>
+          <p data-i18n="quick.s3b">幼苗長出後，連發芽塊放入海綿和網盆。</p>
+        </li>
+        <li class="card step">
+          <span class="step-num" aria-hidden="true">4</span>
+          <svg class="icon icon-lg" aria-hidden="true"><use href="#i-cap"></use></svg>
+          <h4 data-i18n="quick.s4t">開營養液</h4>
+          <p data-i18n="quick.s4b">用瓶蓋量度分量，按包裝指示加水稀釋。</p>
+        </li>
+        <li class="card step">
+          <span class="step-num" aria-hidden="true">5</span>
+          <svg class="icon icon-lg" aria-hidden="true"><use href="#i-pot"></use></svg>
+          <h4 data-i18n="quick.s5t">放入網盆</h4>
+          <p data-i18n="quick.s5b">網盆底部 1 吋浸在水裡。</p>
+        </li>
+        <li class="card step step-warn">
+          <span class="step-num" aria-hidden="true">6</span>
+          <svg class="icon icon-lg" aria-hidden="true"><use href="#i-alert"></use></svg>
+          <h4 data-i18n="quick.s6t">之後不要補水</h4>
+          <p data-i18n="quick.s6b">不要再加水，讓水位慢慢下降。</p>
+        </li>
+        <li class="card step">
+          <span class="step-num" aria-hidden="true">7</span>
+          <svg class="icon icon-lg" aria-hidden="true"><use href="#i-sun"></use></svg>
+          <h4 data-i18n="quick.s7t">放明亮窗邊</h4>
+          <p data-i18n="quick.s7b">不用水泵、不用電、不用天天澆水。</p>
+        </li>
+      </ol>
+
+      <p class="reminder">
+        <strong data-i18n="rules.rule1">底部 1 吋浸水</strong>
+        <span aria-hidden="true">·</span>
+        <strong data-i18n="rules.rule2">之後不要補水</strong>
+      </p>
+      <p class="print-only" data-i18n="print.note">底部 1 吋浸水．之後不要補水</p>
+    </div>
+  </section>
+
+  <!-- ===== 5. Weekly care ===== -->
+  <section class="section section-alt" id="weekly" aria-labelledby="weekly-h">
+    <div class="wrap">
+      <h2 id="weekly-h" data-i18n="weekly.title">每週照顧</h2>
+      <p data-i18n="weekly.intro">每星期花一兩分鐘檢查就可以。</p>
+      <ul class="card-grid grid-4">
+        <li class="card">
+          <svg class="icon icon-lg" aria-hidden="true"><use href="#i-drop"></use></svg>
+          <h3 data-i18n="weekly.w1t">檢查水位</h3>
+          <p data-i18n="weekly.w1b">看看網盆底部是否仍然浸在水裡。不要補水。</p>
+        </li>
+        <li class="card">
+          <svg class="icon icon-lg" aria-hidden="true"><use href="#i-root"></use></svg>
+          <h3 data-i18n="weekly.w2t">檢查根的顏色</h3>
+          <p data-i18n="weekly.w2b">白色根＝健康；啡色或黏滑＝請看疑難排解。</p>
+        </li>
+        <li class="card">
+          <svg class="icon icon-lg" aria-hidden="true"><use href="#i-algae"></use></svg>
+          <h3 data-i18n="weekly.w3t">檢查綠藻</h3>
+          <p data-i18n="weekly.w3b">如果水變綠，或見到光線照到瓶內，請包好瓶身。</p>
+        </li>
+        <li class="card">
+          <svg class="icon icon-lg" aria-hidden="true"><use href="#i-storm"></use></svg>
+          <h3 data-i18n="weekly.w4t">颱風前</h3>
+          <p data-i18n="weekly.w4b">打風之前，把瓶子移到地面或低層架子。</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== 6. Video guides ===== -->
+  <section class="section" id="videos" aria-labelledby="videos-h">
+    <div class="wrap">
+      <h2 id="videos-h" data-i18n="video.title">影片教學</h2>
+      <p data-i18n="video.intro">每段 1–2 分鐘的廣東話短片。</p>
+      <ul class="card-grid grid-3 video-grid">
+        <li class="card video-card">
+          <div class="video-thumb">
+            <img src="assets/video-1-poster.svg" width="640" height="360" loading="lazy" alt="套裝組裝示範影片的封面圖" data-i18n-attr="alt:video.a1">
+            <span class="play" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><use href="#i-play"></use></svg></span>
+            <span class="badge" data-i18n="video.preparing">影片準備中</span>
+          </div>
+          <div class="video-body">
+            <h3 data-i18n="video.t1">開箱與組裝</h3>
+            <p class="meta"><span data-i18n="video.d1">2 分鐘</span></p>
+            <p data-i18n="video.s1">短片：把套裝組裝好，認識每個部件。</p>
+            <button type="button" class="transcript-btn" aria-expanded="false" aria-controls="tp1" data-transcript="tp1"><span data-i18n="video.transcriptShow">顯示逐字稿</span></button>
+            <p class="transcript" id="tp1" hidden data-i18n="video.x1">逐字稿：（影片準備中，暫以文字說明代替。）</p>
+          </div>
+        </li>
+        <li class="card video-card">
+          <div class="video-thumb">
+            <img src="assets/video-2-poster.svg" width="640" height="360" loading="lazy" alt="落種子示範影片的封面圖" data-i18n-attr="alt:video.a2">
+            <span class="play" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><use href="#i-play"></use></svg></span>
+            <span class="badge" data-i18n="video.preparing">影片準備中</span>
+          </div>
+          <div class="video-body">
+            <h3 data-i18n="video.t2">落種子及發芽</h3>
+            <p class="meta"><span data-i18n="video.d2">1 分鐘</span></p>
+            <p data-i18n="video.s2">短片：在發芽塊放種子，保持濕潤，等待發芽。</p>
+            <button type="button" class="transcript-btn" aria-expanded="false" aria-controls="tp2" data-transcript="tp2"><span data-i18n="video.transcriptShow">顯示逐字稿</span></button>
+            <p class="transcript" id="tp2" hidden data-i18n="video.x2">逐字稿：（影片準備中，暫以文字說明代替。）</p>
+          </div>
+        </li>
+        <li class="card video-card">
+          <div class="video-thumb">
+            <img src="assets/video-3-poster.svg" width="640" height="360" loading="lazy" alt="調配營養液示範影片的封面圖" data-i18n-attr="alt:video.a3">
+            <span class="play" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><use href="#i-play"></use></svg></span>
+            <span class="badge" data-i18n="video.preparing">影片準備中</span>
+          </div>
+          <div class="video-body">
+            <h3 data-i18n="video.t3">開營養液及量度瓶蓋</h3>
+            <p class="meta"><span data-i18n="video.d3">1 分鐘</span></p>
+            <p data-i18n="video.s3">短片：用瓶蓋量營養液，按指示加水。</p>
+            <button type="button" class="transcript-btn" aria-expanded="false" aria-controls="tp3" data-transcript="tp3"><span data-i18n="video.transcriptShow">顯示逐字稿</span></button>
+            <p class="transcript" id="tp3" hidden data-i18n="video.x3">逐字稿：（影片準備中，暫以文字說明代替。）</p>
+          </div>
+        </li>
+        <li class="card video-card">
+          <div class="video-thumb">
+            <img src="assets/video-4-poster.svg" width="640" height="360" loading="lazy" alt="水位示範影片的封面圖" data-i18n-attr="alt:video.a4">
+            <span class="play" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><use href="#i-play"></use></svg></span>
+            <span class="badge" data-i18n="video.preparing">影片準備中</span>
+          </div>
+          <div class="video-body">
+            <h3 data-i18n="video.t4">底部 1 吋浸水與「不要補水」</h3>
+            <p class="meta"><span data-i18n="video.d4">2 分鐘</span></p>
+            <p data-i18n="video.s4">短片：把網盆放好，之後不要再加水。</p>
+            <button type="button" class="transcript-btn" aria-expanded="false" aria-controls="tp4" data-transcript="tp4"><span data-i18n="video.transcriptShow">顯示逐字稿</span></button>
+            <p class="transcript" id="tp4" hidden data-i18n="video.x4">逐字稿：（影片準備中，暫以文字說明代替。）</p>
+          </div>
+        </li>
+        <li class="card video-card">
+          <div class="video-thumb">
+            <img src="assets/video-5-poster.svg" width="640" height="360" loading="lazy" alt="每週檢查示範影片的封面圖" data-i18n-attr="alt:video.a5">
+            <span class="play" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><use href="#i-play"></use></svg></span>
+            <span class="badge" data-i18n="video.preparing">影片準備中</span>
+          </div>
+          <div class="video-body">
+            <h3 data-i18n="video.t5">每週檢查及常見問題</h3>
+            <p class="meta"><span data-i18n="video.d5">2 分鐘</span></p>
+            <p data-i18n="video.s5">短片：每星期檢查水位、根和綠藻。</p>
+            <button type="button" class="transcript-btn" aria-expanded="false" aria-controls="tp5" data-transcript="tp5"><span data-i18n="video.transcriptShow">顯示逐字稿</span></button>
+            <p class="transcript" id="tp5" hidden data-i18n="video.x5">逐字稿：（影片準備中，暫以文字說明代替。）</p>
+          </div>
+        </li>
+        <li class="card video-card">
+          <div class="video-thumb">
+            <img src="assets/video-6-poster.svg" width="640" height="360" loading="lazy" alt="採收羅勒示範影片的封面圖" data-i18n-attr="alt:video.a6">
+            <span class="play" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><use href="#i-play"></use></svg></span>
+            <span class="badge" data-i18n="video.preparing">影片準備中</span>
+          </div>
+          <div class="video-body">
+            <h3 data-i18n="video.t6">採收羅勒</h3>
+            <p class="meta"><span data-i18n="video.d6">1 分鐘</span></p>
+            <p data-i18n="video.s6">短片：摘外圍葉片，讓羅勒繼續生長。</p>
+            <button type="button" class="transcript-btn" aria-expanded="false" aria-controls="tp6" data-transcript="tp6"><span data-i18n="video.transcriptShow">顯示逐字稿</span></button>
+            <p class="transcript" id="tp6" hidden data-i18n="video.x6">逐字稿：（影片準備中，暫以文字說明代替。）</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== 7. Troubleshooting ===== -->
+  <section class="section section-alt" id="trouble" aria-labelledby="trouble-h">
+    <div class="wrap">
+      <h2 id="trouble-h" data-i18n="trouble.title">疑難排解</h2>
+      <p data-i18n="trouble.intro">先找出症狀，再看可能原因和簡單做法。</p>
+      <ul class="card-grid grid-3">
+        <li class="card trouble-card">
+          <svg class="icon icon-lg" aria-hidden="true"><use href="#i-seed"></use></svg>
+          <h3 class="symptom" data-i18n="trouble.c1t">種子沒有發芽</h3>
+          <p class="cause" data-i18n="trouble.c1c">溫度太低，或發芽塊太乾、太濕。</p>
+          <p class="action" data-i18n="trouble.c1a">保持發芽塊濕潤，放在溫暖位置，再等 3–7 日。</p>
+        </li>
+        <li class="card trouble-card">
+          <svg class="icon icon-lg" aria-hidden="true"><use href="#i-algae"></use></svg>
+          <h3 class="symptom" data-i18n="trouble.c2t">水有綠藻</h3>
+          <p class="cause" data-i18n="trouble.c2c">光線照到瓶內的水。</p>
+          <p class="action" data-i18n="trouble.c2a">用黑膠紙、錫紙或深色套包住瓶身。</p>
+        </li>
+        <li class="card trouble-card">
+          <svg class="icon icon-lg" aria-hidden="true"><use href="#i-root"></use></svg>
+          <h3 class="symptom" data-i18n="trouble.c3t">根變啡色或黏滑</h3>
+          <p class="cause" data-i18n="trouble.c3c">水溫太高，或水裡空氣不足。</p>
+          <p class="action" data-i18n="trouble.c3a">換新營養液，把瓶子移到陰涼位置。如仍然黏滑，重新開始種。</p>
+        </li>
+        <li class="card trouble-card">
+          <svg class="icon icon-lg" aria-hidden="true"><use href="#i-leaf"></use></svg>
+          <h3 class="symptom" data-i18n="trouble.c4t">葉子變黃</h3>
+          <p class="cause" data-i18n="trouble.c4c">營養不足，或陽光太多。</p>
+          <p class="action" data-i18n="trouble.c4a">按包裝重新調配營養液，並移到明亮但無直曬的位置。</p>
+        </li>
+        <li class="card trouble-card">
+          <svg class="icon icon-lg" aria-hidden="true"><use href="#i-drop"></use></svg>
+          <h3 class="symptom" data-i18n="trouble.c5t">水位太低</h3>
+          <p class="cause" data-i18n="trouble.c5c">水已被植物用完，屬正常。</p>
+          <p class="action" data-i18n="trouble.c5a">讓它繼續，水位接近底部時就可以採收。</p>
+        </li>
+        <li class="card trouble-card">
+          <svg class="icon icon-lg" aria-hidden="true"><use href="#i-bottle"></use></svg>
+          <h3 class="symptom" data-i18n="trouble.c6t">瓶身漏光</h3>
+          <p class="cause" data-i18n="trouble.c6c">瓶子不夠遮光。</p>
+          <p class="action" data-i18n="trouble.c6a">用黑膠紙、錫紙或深色套包好整支瓶子。</p>
+        </li>
+        <li class="card trouble-card">
+          <svg class="icon icon-lg" aria-hidden="true"><use href="#i-storm"></use></svg>
+          <h3 class="symptom" data-i18n="trouble.c7t">颱風前怎麼辦</h3>
+          <p class="cause" data-i18n="trouble.c7c">強風可能吹倒瓶子。</p>
+          <p class="action" data-i18n="trouble.c7a">打風前把瓶子移到地面或低層架子，遠離窗邊。</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== 8. Harvest ===== -->
+  <section class="section" id="harvest" aria-labelledby="harvest-h">
+    <div class="wrap">
+      <h2 id="harvest-h" data-i18n="harvest.title">採收</h2>
+      <p data-i18n="harvest.intro">時間因植物和季節而不同。</p>
+      <ul class="card-grid grid-3">
+        <li class="card">
+          <svg class="icon icon-lg" aria-hidden="true"><use href="#i-sprout"></use></svg>
+          <h3 data-i18n="harvest.c1n">羅勒、薄荷</h3>
+          <p class="meta" data-i18n="harvest.c1t">約 4–6 星期</p>
+          <p data-i18n="harvest.c1note">摘外圍的葉，中間會繼續生長。</p>
+        </li>
+        <li class="card">
+          <svg class="icon icon-lg" aria-hidden="true"><use href="#i-leaf"></use></svg>
+          <h3 data-i18n="harvest.c2n">生菜</h3>
+          <p class="meta" data-i18n="harvest.c2t">約 30–45 日</p>
+          <p data-i18n="harvest.c2note">摘外葉，或一次過整棵採收。</p>
+        </li>
+        <li class="card">
+          <svg class="icon icon-lg" aria-hidden="true"><use href="#i-leaf"></use></svg>
+          <h3 data-i18n="harvest.c3n">小白菜</h3>
+          <p class="meta" data-i18n="harvest.c3t">約 30–50 日</p>
+          <p data-i18n="harvest.c3note">水位差不多用完時，整棵採收。</p>
+        </li>
+      </ul>
+      <p class="callout" data-i18n="harvest.tip">摘外圍葉片，植物就可以繼續生長。</p>
+      <p class="callout callout-warn" data-i18n="harvest.limit">這方法適合葉菜和香草，不適合番茄等大型結果作物。</p>
+    </div>
+  </section>
+
+  <!-- ===== 9. Buy refills ===== -->
+  <section class="section section-alt" id="buy" aria-labelledby="buy-h">
+    <div class="wrap">
+      <h2 id="buy-h" data-i18n="buy.title">購買補充品</h2>
+      <p data-i18n="buy.intro">只有營養液和種子需要補充。瓶子可以重複使用。</p>
+
+      <p class="buy-tip">
+        <svg class="icon" aria-hidden="true"><use href="#i-alert"></use></svg>
+        <span data-i18n="buy.tip">購買前請先致電或查看網頁確認。營養液和種子需要補充，但瓶子可以永久重用。</span>
+      </p>
+
+      <div class="two-col">
+        <!-- ---- Online ---- -->
+        <div class="shop-col">
+          <h3 class="sub-h"><svg class="icon" aria-hidden="true"><use href="#i-cart"></use></svg><span data-i18n="buy.onlineTitle">網上購買</span></h3>
+
+          <h4 class="shop-cat" data-i18n="buy.cat1">本地種子及綜合園藝網店</h4>
+          <ul class="shop-list">
+            <li class="card shop">
+              <p class="shop-name" data-i18n="data.online_shops.o1.name">香港高華種子網店</p>
+              <p class="shop-desc" data-i18n="data.online_shops.o1.desc">香港老字號種子公司，專營適合本地氣候的當季葉菜、瓜果、香草及食用花種子，同時提供現貨幼苗及種植用品。</p>
+              <a class="btn btn-primary shop-btn" href="https://www.cloverseedretail.com.hk/" target="_blank" rel="noopener noreferrer" data-i18n-attr="aria-label:data.online_shops.o1.aria">
+                <span data-i18n="buy.buyBtn">前往選購</span>
+                <svg class="icon icon-ext" aria-hidden="true"><use href="#i-external"></use></svg>
+              </a>
+            </li>
+            <li class="card shop">
+              <p class="shop-name" data-i18n="data.online_shops.o2.name">樂活都市農夫</p>
+              <p class="shop-desc" data-i18n="data.online_shops.o2.desc">主打家庭有機種植，網店有售各類蔬果種子以及「NICE 麗施」等濃縮或即用型植物營養液。</p>
+              <a class="btn btn-primary shop-btn" href="https://www.happycityfarmershop.com.hk/index.php?route=product/product&amp;product_id=167" target="_blank" rel="noopener noreferrer" data-i18n-attr="aria-label:data.online_shops.o2.aria">
+                <span data-i18n="buy.buyBtn">前往選購</span>
+                <svg class="icon icon-ext" aria-hidden="true"><use href="#i-external"></use></svg>
+              </a>
+            </li>
+            <li class="card shop">
+              <p class="shop-name" data-i18n="data.online_shops.o3.name">繽紛園藝網店</p>
+              <p class="shop-desc" data-i18n="data.online_shops.o3.desc">香港大型園藝品牌，網上商店提供多款進口液體肥及各類花卉、觀葉植物專用營養液。</p>
+              <a class="btn btn-primary shop-btn" href="https://www.brighten.hk/v2/official/SalePageCategory/10212" target="_blank" rel="noopener noreferrer" data-i18n-attr="aria-label:data.online_shops.o3.aria">
+                <span data-i18n="buy.buyBtn">前往選購</span>
+                <svg class="icon icon-ext" aria-hidden="true"><use href="#i-external"></use></svg>
+              </a>
+            </li>
+            <li class="card shop">
+              <p class="shop-name" data-i18n="data.online_shops.o4.name">花寶香港</p>
+              <p class="shop-desc" data-i18n="data.online_shops.o4.desc">提供著名的「日本花寶」各系列濃縮營養液（針對觀葉、開花或蔬果專用），以及配套的種子與培植土。</p>
+              <a class="btn btn-primary shop-btn" href="https://www.plantmate.com.hk/collections/gardening-products-hong-kong?page=7&amp;srsltid=AYCX9vJ5jTHOaWRX1H5Zxugw2ir6bcUsFK2Vsxl5DaQyv5b-QGftCJSN" target="_blank" rel="noopener noreferrer" data-i18n-attr="aria-label:data.online_shops.o4.aria">
+                <span data-i18n="buy.buyBtn">前往選購</span>
+                <svg class="icon icon-ext" aria-hidden="true"><use href="#i-external"></use></svg>
+              </a>
+            </li>
+          </ul>
+
+          <h4 class="shop-cat" data-i18n="buy.cat2">水耕及室內種植專門店</h4>
+          <ul class="shop-list">
+            <li class="card shop">
+              <p class="shop-name" data-i18n="data.online_shops.o5.name">Veggroom</p>
+              <p class="shop-desc" data-i18n="data.online_shops.o5.desc">專注於室內水耕種植，提供 pH 平衡水耕栽培植物營養液、香草及蔬菜種子補充裝，以及育苗用的椰纖土。</p>
+              <a class="btn btn-primary shop-btn" href="https://www.veggroom.com/zh/product-category/seeds-and-plant-nutrients/?srsltid=AYCX9vIbZd5hm4jbRF2pLfIzm9UMuHAo9oQTuEH3ipN5j2ZTD4jJqx0o" target="_blank" rel="noopener noreferrer" data-i18n-attr="aria-label:data.online_shops.o5.aria">
+                <span data-i18n="buy.buyBtn">前往選購</span>
+                <svg class="icon icon-ext" aria-hidden="true"><use href="#i-external"></use></svg>
+              </a>
+            </li>
+            <li class="card shop">
+              <p class="shop-name" data-i18n="data.online_shops.o6.name">HYPONICA 香港網店</p>
+              <p class="shop-desc" data-i18n="data.online_shops.o6.desc">專營日本製水耕及土耕兩用營養液，包括免稀釋的「即用營養液」及高濃度濃縮液，適合從幼苗到結果的各個階段。</p>
+              <a class="btn btn-primary shop-btn" href="https://www.hyponica.com.hk/products/hyponica-liquid-fertilizer-5%E5%80%8D%E6%BF%83%E7%B8%AE%E7%87%9F%E9%A4%8A%E6%B6%B2-500ml%E7%9A%84%E5%89%AF%E6%9C%AC" target="_blank" rel="noopener noreferrer" data-i18n-attr="aria-label:data.online_shops.o6.aria">
+                <span data-i18n="buy.buyBtn">前往選購</span>
+                <svg class="icon icon-ext" aria-hidden="true"><use href="#i-external"></use></svg>
+              </a>
+            </li>
+          </ul>
+
+          <h4 class="shop-cat" data-i18n="buy.cat3">大型綜合網購平台</h4>
+          <ul class="shop-list">
+            <li class="card shop">
+              <p class="shop-name" data-i18n="data.online_shops.o7.name">HKTVmall</p>
+              <p class="shop-desc" data-i18n="data.online_shops.o7.desc">平台內有多間本地園藝商戶進駐，可一站式購買各類花草蔬果種子、水培植物營養液及園藝工具，適合搭配日常百貨免運費送貨。</p>
+              <a class="btn btn-primary shop-btn" href="https://www.hktvmall.com/" target="_blank" rel="noopener noreferrer" data-i18n-attr="aria-label:data.online_shops.o7.aria">
+                <span data-i18n="buy.buyBtn">前往選購</span>
+                <svg class="icon icon-ext" aria-hidden="true"><use href="#i-external"></use></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- ---- Physical ---- -->
+        <div class="shop-col">
+          <h3 class="sub-h"><svg class="icon" aria-hidden="true"><use href="#i-shop"></use></svg><span data-i18n="buy.shopTitle">啟德及附近實體店</span></h3>
+
+          <h4 class="shop-cat" data-i18n="buy.region1">啟德／新蒲崗／九龍灣周邊</h4>
+          <ul class="shop-list">
+            <li class="card shop">
+              <p class="shop-name" data-i18n="data.physical_shops.s1.name">Forest Round Round</p>
+              <p class="shop-line">
+                <svg class="icon icon-sm" aria-hidden="true"><use href="#i-pin"></use></svg>
+                <span class="shop-key" data-i18n="buy.addrLabel">地址：</span>
+                <span data-i18n="data.physical_shops.s1.addr">九龍灣宏開道 20 號楊耀松第八工業大廈 11 樓 C1 室（出電梯左轉，走廊直行到尾）</span>
+              </p>
+              <p class="shop-line">
+                <svg class="icon icon-sm" aria-hidden="true"><use href="#i-phone"></use></svg>
+                <span class="shop-key" data-i18n="buy.phoneLabel">電話：</span>
+                <a href="tel:+85252386664"><span data-i18n="data.physical_shops.s1.phone">+852 5238 6664</span></a>
+              </p>
+              <p class="shop-line">
+                <svg class="icon icon-sm" aria-hidden="true"><use href="#i-clock"></use></svg>
+                <span class="shop-key" data-i18n="buy.hoursLabel">營業時間：</span>
+                <span data-i18n="data.physical_shops.s1.hours">週四至週日及公眾假期 11:00 – 21:00；週一、週二需預約到訪；週三休息</span>
+              </p>
+              <p class="shop-actions">
+                <a class="btn shop-btn-outline" href="https://forestroundround.com/?srsltid=AYCX9vK3vUQ2FIN_MpFZYFjC55099VIJDX3YtDwr2gJSDkD2zxCJIZss" target="_blank" rel="noopener noreferrer" data-i18n-attr="aria-label:data.physical_shops.s1.aria">
+                  <span data-i18n="buy.visitBtn">前往網站</span>
+                  <svg class="icon icon-ext" aria-hidden="true"><use href="#i-external"></use></svg>
+                </a>
+              </p>
+              <p class="shop-desc" data-i18n="data.physical_shops.s1.desc">本地人氣植物選物店（多肉植物、塊根植物、盆景與手工陶器），偶爾有植料及種植諮詢，距離啟德不遠。</p>
+            </li>
+            <li class="card shop">
+              <p class="shop-name" data-i18n="data.physical_shops.s2.name">動力農莊 天台農莊</p>
+              <p class="shop-line">
+                <svg class="icon icon-sm" aria-hidden="true"><use href="#i-pin"></use></svg>
+                <span class="shop-key" data-i18n="buy.addrLabel">地址：</span>
+                <span data-i18n="data.physical_shops.s2.addr">九龍觀塘觀塘道工業中心第二期 13 樓 T 室天台（距離觀塘港鐵站約 2 分鐘路程）</span>
+              </p>
+              <p class="shop-line">
+                <svg class="icon icon-sm" aria-hidden="true"><use href="#i-phone"></use></svg>
+                <span class="shop-key" data-i18n="buy.phoneLabel">電話：</span>
+                <a href="tel:+85269354327"><span data-i18n="data.physical_shops.s2.phone">+852 6935 4327</span></a>
+              </p>
+              <p class="shop-actions">
+                <a class="btn shop-btn-outline" href="https://maps.app.goo.gl/XTroJFdHKWSQbMSXA" target="_blank" rel="noopener noreferrer" data-i18n-attr="aria-label:data.physical_shops.s2.aria">
+                  <span data-i18n="buy.mapBtn">查看地圖</span>
+                  <svg class="icon icon-ext" aria-hidden="true"><use href="#i-external"></use></svg>
+                </a>
+              </p>
+              <p class="shop-desc" data-i18n="data.physical_shops.s2.desc">市區天台智能農莊，提供有機種植課程及零售肥料、種子與園藝工具。</p>
+            </li>
+            <li class="card shop">
+              <p class="shop-name" data-i18n="data.physical_shops.s3.name">森流 GreenFlow</p>
+              <p class="shop-line">
+                <svg class="icon icon-sm" aria-hidden="true"><use href="#i-pin"></use></svg>
+                <span class="shop-key" data-i18n="buy.addrLabel">地址：</span>
+                <span data-i18n="data.physical_shops.s3.addr">觀塘偉業街 172 號堅德工業大廈 14 樓 C 室</span>
+              </p>
+              <p class="shop-line">
+                <svg class="icon icon-sm" aria-hidden="true"><use href="#i-clock"></use></svg>
+                <span class="shop-key" data-i18n="buy.hoursLabel">營業時間：</span>
+                <span data-i18n="data.physical_shops.s3.hours">星期一至五 12:30 – 20:00；星期六、日及公眾假期 13:00 – 19:00</span>
+              </p>
+              <p class="shop-actions">
+                <a class="btn shop-btn-outline" href="https://www.greenflow.hk/?srsltid=AYCX9vJMbD6U7XfnB5T1EsOaRTspbtxmdBRj0fcBc1egqgtQ7fFVKgs0" target="_blank" rel="noopener noreferrer" data-i18n-attr="aria-label:data.physical_shops.s3.aria">
+                  <span data-i18n="buy.visitBtn">前往網站</span>
+                  <svg class="icon icon-ext" aria-hidden="true"><use href="#i-external"></use></svg>
+                </a>
+              </p>
+              <p class="shop-desc" data-i18n="data.physical_shops.s3.desc">集觀賞植物、水族、生態造景於一身的工廈店，常有水生／水培相關佈置與用品。</p>
+            </li>
+          </ul>
+
+          <h4 class="shop-cat" data-i18n="buy.region2">太子花墟一帶（車程約 10–15 分鐘）</h4>
+          <ul class="shop-list">
+            <li class="card shop">
+              <p class="shop-name" data-i18n="data.physical_shops.s4.name">栽蒔 Joys of Growing（繽紛園藝旗下）</p>
+              <p class="shop-line">
+                <svg class="icon icon-sm" aria-hidden="true"><use href="#i-pin"></use></svg>
+                <span class="shop-key" data-i18n="buy.addrLabel">地址：</span>
+                <span data-i18n="data.physical_shops.s4.addr">九龍旺角花墟道 6-8 號地下（或太子花墟道 8 號百花閣地下）</span>
+              </p>
+              <p class="shop-line">
+                <svg class="icon icon-sm" aria-hidden="true"><use href="#i-phone"></use></svg>
+                <span class="shop-key" data-i18n="buy.phoneLabel">電話：</span>
+                <a href="tel:+85223809801"><span data-i18n="data.physical_shops.s4.phone">2380 9801 / 2380 9816</span></a>
+              </p>
+              <p class="shop-line">
+                <svg class="icon icon-sm" aria-hidden="true"><use href="#i-clock"></use></svg>
+                <span class="shop-key" data-i18n="buy.hoursLabel">營業時間：</span>
+                <span data-i18n="data.physical_shops.s4.hours">星期一至日 10:00 – 19:00（公眾假期或特別日子時間或有變動）</span>
+              </p>
+              <p class="shop-actions">
+                <a class="btn shop-btn-outline" href="https://www.brighten.hk/page/garden-accessories?lang=zh-HK" target="_blank" rel="noopener noreferrer" data-i18n-attr="aria-label:data.physical_shops.s4.aria">
+                  <span data-i18n="buy.visitBtn">前往網站</span>
+                  <svg class="icon icon-ext" aria-hidden="true"><use href="#i-external"></use></svg>
+                </a>
+              </p>
+              <p class="shop-desc" data-i18n="data.physical_shops.s4.desc">繽紛園藝旗下專門售賣種子、肥料、農藥及各類種植用品的實體店，水培營養液與種子種類豐富。</p>
+            </li>
+            <li class="card shop">
+              <p class="shop-name" data-i18n="data.physical_shops.s5.name">繽紛園藝 Brighten Floriculture</p>
+              <p class="shop-line">
+                <svg class="icon icon-sm" aria-hidden="true"><use href="#i-pin"></use></svg>
+                <span class="shop-key" data-i18n="buy.addrLabel">地址：</span>
+                <span data-i18n="data.physical_shops.s5.addr">九龍油尖旺區花墟道 28 號地下</span>
+              </p>
+              <p class="shop-line">
+                <svg class="icon icon-sm" aria-hidden="true"><use href="#i-phone"></use></svg>
+                <span class="shop-key" data-i18n="buy.phoneLabel">電話：</span>
+                <a href="tel:+85223805113"><span data-i18n="data.physical_shops.s5.phone">+852 2380 5113</span></a>
+              </p>
+              <p class="shop-line">
+                <svg class="icon icon-sm" aria-hidden="true"><use href="#i-clock"></use></svg>
+                <span class="shop-key" data-i18n="buy.hoursLabel">營業時間：</span>
+                <span data-i18n="data.physical_shops.s5.hours">星期一至日 10:30 – 19:00（年初一至三休息）</span>
+              </p>
+              <p class="shop-actions">
+                <a class="btn shop-btn-outline" href="https://www.brighten.hk/V2/Shop/StoreList/67?lang=zh-HK" target="_blank" rel="noopener noreferrer" data-i18n-attr="aria-label:data.physical_shops.s5.aria">
+                  <span data-i18n="buy.visitBtn">前往網站</span>
+                  <svg class="icon icon-ext" aria-hidden="true"><use href="#i-external"></use></svg>
+                </a>
+              </p>
+              <p class="shop-desc" data-i18n="data.physical_shops.s5.desc">多層大型花店與園藝用品中心，有售水耕專用營養液（如荷蘭進口品牌）及水種盆栽。</p>
+            </li>
+            <li class="card shop">
+              <p class="shop-name" data-i18n="data.physical_shops.s6.name">森記園花卉出入口公司</p>
+              <p class="shop-line">
+                <svg class="icon icon-sm" aria-hidden="true"><use href="#i-pin"></use></svg>
+                <span class="shop-key" data-i18n="buy.addrLabel">地址：</span>
+                <span data-i18n="data.physical_shops.s6.addr">九龍旺角太子道西 162-164 號華邦商業大廈地下</span>
+              </p>
+              <p class="shop-line">
+                <svg class="icon icon-sm" aria-hidden="true"><use href="#i-phone"></use></svg>
+                <span class="shop-key" data-i18n="buy.phoneLabel">電話：</span>
+                <a href="tel:+85223802753"><span data-i18n="data.physical_shops.s6.phone">+852 2380 2753 / 2396 6699</span></a>
+              </p>
+              <p class="shop-line">
+                <svg class="icon icon-sm" aria-hidden="true"><use href="#i-clock"></use></svg>
+                <span class="shop-key" data-i18n="buy.hoursLabel">營業時間：</span>
+                <span data-i18n="data.physical_shops.s6.hours">星期一至日 09:30 – 19:00</span>
+              </p>
+              <p class="shop-actions">
+                <a class="btn shop-btn-outline" href="https://www.sumkeeyuen.com/?srsltid=AYCX9vLyR3_ay0rfJhUinMDSF9nSI2q1apyP2mxOupKlhMvs8Xe9PLmn" target="_blank" rel="noopener noreferrer" data-i18n-attr="aria-label:data.physical_shops.s6.aria">
+                  <span data-i18n="buy.visitBtn">前往網站</span>
+                  <svg class="icon icon-ext" aria-hidden="true"><use href="#i-external"></use></svg>
+                </a>
+              </p>
+              <p class="shop-desc" data-i18n="data.physical_shops.s6.desc">老字號園藝店，提供各國進口種子、種苗及園藝資材。</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="callout" data-i18n="buy.restock">需要補充：營養液、種子</p>
+      <p class="callout" data-i18n="buy.reuse">瓶子可重用，不用再買。</p>
+    </div>
+  </section>
+
+  <!-- ===== 10. FAQ ===== -->
+  <section class="section" id="faq" aria-labelledby="faq-h">
+    <div class="wrap">
+      <h2 id="faq-h" data-i18n="faq.title">常見問題</h2>
+      <ul class="faq-list">
+        <li class="card faq">
+          <h3 data-i18n="faq.q1">為何不用泥土？</h3>
+          <p data-i18n="faq.a1">根直接吸收水中的營養，所以不用泥土，也較少蟲害。</p>
+        </li>
+        <li class="card faq">
+          <h3 data-i18n="faq.q2">為何不用泵或電？</h3>
+          <p data-i18n="faq.a2">被動式水培法（Kratky 方法）靠水位自然下降，讓根一半浸水、一半接觸空氣，所以不用泵、不用電。</p>
+        </li>
+        <li class="card faq">
+          <h3 data-i18n="faq.q3">為何不要補水？</h3>
+          <p data-i18n="faq.a3">水面下降後，根的上半部會接觸空氣。如果補水，根就會缺氧。</p>
+        </li>
+        <li class="card faq">
+          <h3 data-i18n="faq.q4">可以用回收瓶嗎？</h3>
+          <p data-i18n="faq.a4">可以。瓶子要食品級、不透光，並用黑膠紙、錫紙或深色套包好。</p>
+        </li>
+        <li class="card faq">
+          <h3 data-i18n="faq.q5">可以種什麼？</h3>
+          <p data-i18n="faq.a5">羅勒、薄荷、生菜、小白菜等葉菜和香草。不適合番茄等大型結果作物。</p>
+        </li>
+        <li class="card faq">
+          <h3 data-i18n="faq.q6">營養液如何存放？</h3>
+          <p data-i18n="faq.a6">放在陰涼、小朋友拿不到的地方，蓋好瓶蓋，並按包裝指示使用。</p>
+        </li>
+        <li class="card faq">
+          <h3 data-i18n="faq.q7">忘記了怎麼做怎麼辦？</h3>
+          <p data-i18n="faq.a7">掃描瓶身 QR code 回到本頁，或列印本頁的快速指南貼在瓶邊。</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== 11. Contact ===== -->
+  <section class="section section-alt" id="contact" aria-labelledby="contact-h">
+    <div class="wrap">
+      <h2 id="contact-h" data-i18n="contact.title">聯絡</h2>
+      <p data-i18n="contact.intro">想參加工作坊或有疑問，歡迎聯絡我們。</p>
+
+      <div class="two-col contact-cols">
+
+        <!-- Card 1 — Pok Oi Centre information -->
+        <div class="card">
+          <h3 data-i18n="data.contact.poi_info.title">博愛中心基本資料</h3>
+          <ul class="info-list">
+            <li class="info-row">
+              <svg class="icon" aria-hidden="true"><use href="#i-users"></use></svg>
+              <span>
+                <span class="info-key" data-i18n="data.contact.poi_info.audienceLabel">服務對象：</span>
+                <span data-i18n="data.contact.poi_info.audience">啟德世運道簡約公屋居民及區內街坊</span>
+              </span>
+            </li>
+            <li class="info-row">
+              <svg class="icon" aria-hidden="true"><use href="#i-phone"></use></svg>
+              <span>
+                <span class="info-key" data-i18n="data.contact.poi_info.phoneLabel">電話：</span>
+                <a class="info-tel" href="tel:21513931" data-i18n-attr="aria-label:data.contact.poi_info.phoneAria"><span data-i18n="data.contact.poi_info.phone">2151 3931</span></a>
+              </span>
+            </li>
+            <li class="info-row">
+              <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"></use></svg>
+              <span>
+                <span class="info-key" data-i18n="data.contact.poi_info.whatsappLabel">WhatsApp：</span>
+                <a href="https://wa.me/85298321426" target="_blank" rel="noopener noreferrer" data-i18n-attr="aria-label:data.contact.poi_info.whatsappAria"><span data-i18n="data.contact.poi_info.whatsapp">9832 1426</span></a>
+              </span>
+            </li>
+            <li class="info-row">
+              <svg class="icon" aria-hidden="true"><use href="#i-clock"></use></svg>
+              <span>
+                <span class="info-key" data-i18n="data.contact.poi_info.hoursLabel">開放時間：</span>
+                <span data-i18n="data.contact.poi_info.hours">星期一至日 上午10時至晚上9時（公眾假期休息）</span>
+              </span>
+            </li>
+            <li class="info-row">
+              <svg class="icon" aria-hidden="true"><use href="#i-hands"></use></svg>
+              <span>
+                <span class="info-key" data-i18n="data.contact.poi_info.servicesLabel">主要服務：</span>
+                <span data-i18n="data.contact.poi_info.services">提供多元化社區活動、基層住屋及生活支援服務</span>
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Card 2 — student WhatsApp group -->
+        <div class="card group-card">
+          <h3 data-i18n="data.contact.whatsapp_group.title">本次組織的學生WhatsApp群組（啟德世運道簡約公屋-居家水培計劃）</h3>
+          <p data-i18n="data.contact.whatsapp_group.intro">點擊下方按鈕，加入群組與同學及義工交流種植心得。</p>
+          <a class="btn btn-primary contact-btn" href="https://chat.whatsapp.com/Hab3iGj1oc506NSPSD0l6N?s=cl&amp;p=a&amp;iam=2" target="_blank" rel="noopener noreferrer" data-i18n-attr="aria-label:data.contact.whatsapp_group.btnAria">
+            <span data-i18n="data.contact.whatsapp_group.btn">加入 WhatsApp 群組</span>
+            <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"></use></svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== 12. Footer ===== -->
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="footer-name" data-i18n="footer.name">啟德居民水培種植計劃</p>
+    <p data-i18n="footer.disclaimer">本網站只提供一般種植資訊，並非專業農業或醫療建議。</p>
+    <p>
+      <span data-i18n="footer.updatedLabel">最後更新：</span>
+      <span data-i18n="footer.updated">2026-11-12</span>
+    </p>
+    <p><a href="#hero" data-i18n="footer.qr">QR code 回到本頁</a></p>
+    <p class="meta" data-i18n="footer.privacy">本網站不使用追蹤或 cookies，只在你的裝置儲存語言選擇。</p>
+  </div>
+</footer>
+
+<a class="quick-help" href="#trouble" data-i18n="quickhelp.label">快速幫助</a>
+
+<script src="i18n/translations.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
