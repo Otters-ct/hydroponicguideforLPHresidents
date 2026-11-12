@@ -7,7 +7,7 @@ Residents scan the QR code printed on the bottle and land on this page. It
 supports the printed instructions, hosts the Cantonese video guides, explains
 troubleshooting, and points to where refills can be bought.
 
-- **Live URL (the QR target):** <https://otters-ct.github.io/hydroponicguideforLPHresidents/>
+- **Live URL (the QR target):** <https://otters-ct.github.io/hydroponicguideforLPHresidents/?lang=zh-HK#hero>
 - **Not** an online shop. No login, no payment, no backend, no app, no account.
 
 ---
