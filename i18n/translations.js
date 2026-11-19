@@ -9,7 +9,7 @@
    2. zh-HK is the default and is also written inline in index.html.
    3. zh-CN is a natural rewrite for mainland readers, not a character swap.
    4. Write numbers and units as one string, e.g. "1 吋" / "1 英寸" / "1 inch".
-   5. Shop / refill / video / contact data lives under `data.*` so an editor
+   5. Shop / refill / video data lives under `data.*` so an editor
       can change one line and see all three languages side by side.
    6. Shop data under `data.online_shops.*` and `data.physical_shops.*` was
       supplied by the project team. Do not invent extra shops or details, and
@@ -49,7 +49,6 @@ window.I18N = {
     "nav.harvest": "採收",
     "nav.buy": "購買補充品",
     "nav.faq": "常見問題",
-    "nav.contact": "聯絡",
 
     "quickhelp.label": "快速幫助",
 
@@ -67,7 +66,7 @@ window.I18N = {
     "quick.title": "開始種植",
     "quick.intro": "準備好材料，跟著 7 個步驟做。",
     "quick.kitTitle": "套裝內容",
-    "quick.kit1": "2 公升不透光瓶",
+    "quick.kit1": "500 ml不透光瓶",
     "quick.kit2": "網盆",
     "quick.kit3": "海綿",
     "quick.kit4": "發芽塊",
@@ -75,7 +74,7 @@ window.I18N = {
     "quick.kit6": "葉菜營養液",
     "quick.stepsTitle": "7 個步驟",
     "quick.s1t": "準備容器",
-    "quick.s1b": "用不透光、食品級容器，容量 1–4 公升。回收瓶要用黑膠紙、錫紙或深色套包好。",
+    "quick.s1b": "用不透光、食品級容器，容量 0.5–4 公升。回收瓶要用黑膠紙、錫紙或深色套包好。",
     "quick.s2t": "發芽",
     "quick.s2b": "在濕潤的發芽塊放 1–2 粒種子，等 3–7 日。",
     "quick.s3t": "移苗",
@@ -274,28 +273,6 @@ window.I18N = {
     "faq.q7": "忘記了怎麼做怎麼辦？",
     "faq.a7": "掃描瓶身 QR code 回到本頁，或列印本頁的快速指南貼在瓶邊。",
 
-    "contact.title": "聯絡",
-    "contact.intro": "想參加工作坊或有疑問，歡迎聯絡我們。",
-
-    "data.contact.poi_info.title": "博愛中心基本資料",
-    "data.contact.poi_info.audienceLabel": "服務對象：",
-    "data.contact.poi_info.audience": "啟德世運道簡約公屋居民及區內街坊",
-    "data.contact.poi_info.phoneLabel": "電話：",
-    "data.contact.poi_info.phone": "2151 3931",
-    "data.contact.poi_info.phoneAria": "撥打電話 2151 3931",
-    "data.contact.poi_info.whatsappLabel": "WhatsApp：",
-    "data.contact.poi_info.whatsapp": "9832 1426",
-    "data.contact.poi_info.whatsappAria": "以 WhatsApp 聯絡 9832 1426",
-    "data.contact.poi_info.hoursLabel": "開放時間：",
-    "data.contact.poi_info.hours": "星期一至日 上午10時至晚上9時（公眾假期休息）",
-    "data.contact.poi_info.servicesLabel": "主要服務：",
-    "data.contact.poi_info.services": "提供多元化社區活動、基層住屋及生活支援服務",
-
-    "data.contact.whatsapp_group.title": "本次組織的學生WhatsApp群組（啟德世運道簡約公屋-居家水培計劃）",
-    "data.contact.whatsapp_group.intro": "點擊下方按鈕，加入群組與同學及義工交流種植心得。",
-    "data.contact.whatsapp_group.btn": "加入 WhatsApp 群組",
-    "data.contact.whatsapp_group.btnAria": "加入學生 WhatsApp 群組（在新分頁開啟）",
-
     "footer.name": "啟德居民水培種植計劃",
     "footer.disclaimer": "本網站只提供一般種植資訊，並非專業農業或醫療建議。",
     "footer.updatedLabel": "最後更新：",
@@ -336,7 +313,6 @@ window.I18N = {
     "nav.harvest": "采收",
     "nav.buy": "购买补充品",
     "nav.faq": "常见问题",
-    "nav.contact": "联络",
 
     "quickhelp.label": "快速帮助",
 
@@ -354,7 +330,7 @@ window.I18N = {
     "quick.title": "开始种植",
     "quick.intro": "准备好材料，跟着 7 个步骤做。",
     "quick.kitTitle": "套装内容",
-    "quick.kit1": "2 升不透光瓶",
+    "quick.kit1": "0.5 公升不透光瓶",
     "quick.kit2": "网盆",
     "quick.kit3": "海绵",
     "quick.kit4": "发芽块",
@@ -362,7 +338,7 @@ window.I18N = {
     "quick.kit6": "叶菜营养液",
     "quick.stepsTitle": "7 个步骤",
     "quick.s1t": "准备容器",
-    "quick.s1b": "用不透光、食品级容器，容量 1–4 升。回收瓶要用黑胶带、锡纸或深色套包好。",
+    "quick.s1b": "用不透光、食品级容器，容量 0.5–4 升。回收瓶要用黑胶带、锡纸或深色套包好。",
     "quick.s2t": "发芽",
     "quick.s2b": "在湿润的发芽块里放 1–2 粒种子，等 3–7 天。",
     "quick.s3t": "移苗",
@@ -561,28 +537,6 @@ window.I18N = {
     "faq.q7": "忘记怎么做怎么办？",
     "faq.a7": "扫描瓶身二维码回到本页，或把本页的快速指南打印出来贴在瓶边。",
 
-    "contact.title": "联络",
-    "contact.intro": "想参加工作坊或有疑问，欢迎联系我们。",
-
-    "data.contact.poi_info.title": "博爱中心基本资料",
-    "data.contact.poi_info.audienceLabel": "服务对象：",
-    "data.contact.poi_info.audience": "启德世运道简约公屋居民及区内街坊",
-    "data.contact.poi_info.phoneLabel": "电话：",
-    "data.contact.poi_info.phone": "2151 3931",
-    "data.contact.poi_info.phoneAria": "拨打电话 2151 3931",
-    "data.contact.poi_info.whatsappLabel": "WhatsApp：",
-    "data.contact.poi_info.whatsapp": "9832 1426",
-    "data.contact.poi_info.whatsappAria": "通过 WhatsApp 联系 9832 1426",
-    "data.contact.poi_info.hoursLabel": "开放时间：",
-    "data.contact.poi_info.hours": "星期一至日 上午10时至晚上9时（公众假期休息）",
-    "data.contact.poi_info.servicesLabel": "主要服务：",
-    "data.contact.poi_info.services": "提供多元化社区活动、基层住屋及生活支援服务",
-
-    "data.contact.whatsapp_group.title": "本次组织的学生WhatsApp群组（启德世运道简约公屋-居家水培计划）",
-    "data.contact.whatsapp_group.intro": "点击下方按钮，加入群组与同学及义工交流种植心得。",
-    "data.contact.whatsapp_group.btn": "加入 WhatsApp 群组",
-    "data.contact.whatsapp_group.btnAria": "加入学生 WhatsApp 群组（在新标签页打开）",
-
     "footer.name": "启德居民水培种植计划",
     "footer.disclaimer": "本网站只提供一般种植信息，并非专业农业或医疗建议。",
     "footer.updatedLabel": "最后更新：",
@@ -623,7 +577,6 @@ window.I18N = {
     "nav.harvest": "Harvest",
     "nav.buy": "Buy refills",
     "nav.faq": "FAQ",
-    "nav.contact": "Contact",
 
     "quickhelp.label": "Quick help",
 
@@ -641,7 +594,7 @@ window.I18N = {
     "quick.title": "Start growing",
     "quick.intro": "Get the kit ready and follow 7 steps.",
     "quick.kitTitle": "Kit contents",
-    "quick.kit1": "2 litre opaque bottle",
+    "quick.kit1": "500 ml / 0.5 L opaque bottle",
     "quick.kit2": "Net pot",
     "quick.kit3": "Sponge",
     "quick.kit4": "Grow cube",
@@ -649,7 +602,7 @@ window.I18N = {
     "quick.kit6": "Leafy-green nutrient",
     "quick.stepsTitle": "7 steps",
     "quick.s1t": "Prepare the container",
-    "quick.s1b": "Use an opaque, food-grade container of 1–4 litres. Wrap a recycled bottle with black tape, foil or a dark sleeve.",
+    "quick.s1b": "Use an opaque, food-grade container of 0.5–4 litres. Wrap a recycled bottle with black tape, foil or a dark sleeve.",
     "quick.s2t": "Sprout the seed",
     "quick.s2b": "Put 1–2 seeds in a moist grow cube and wait 3–7 days.",
     "quick.s3t": "Move the seedling",
@@ -847,28 +800,6 @@ window.I18N = {
     "faq.a6": "Keep it closed, in a cool place out of reach of children, and follow the label.",
     "faq.q7": "What if I forget the steps?",
     "faq.a7": "Scan the QR code on the bottle to come back to this page, or print the quick guide and tape it to the bottle.",
-
-    "contact.title": "Contact",
-    "contact.intro": "Want to join a workshop or have a question? You are welcome to contact us.",
-
-    "data.contact.poi_info.title": "Pok Oi Centre Information",
-    "data.contact.poi_info.audienceLabel": "Target audience:",
-    "data.contact.poi_info.audience": "Residents of Kai Tak Olympic Avenue Light Public Housing and nearby neighbours.",
-    "data.contact.poi_info.phoneLabel": "Phone:",
-    "data.contact.poi_info.phone": "2151 3931",
-    "data.contact.poi_info.phoneAria": "Call 2151 3931",
-    "data.contact.poi_info.whatsappLabel": "WhatsApp:",
-    "data.contact.poi_info.whatsapp": "9832 1426",
-    "data.contact.poi_info.whatsappAria": "Message 9832 1426 on WhatsApp",
-    "data.contact.poi_info.hoursLabel": "Opening hours:",
-    "data.contact.poi_info.hours": "Monday to Sunday, 10:00 AM – 9:00 PM (closed on public holidays).",
-    "data.contact.poi_info.servicesLabel": "Main services:",
-    "data.contact.poi_info.services": "A variety of community activities, grassroots housing and daily life support services.",
-
-    "data.contact.whatsapp_group.title": "Student WhatsApp Group (Kai Tak Olympic Avenue Light Public Housing – Home Hydroponics Project)",
-    "data.contact.whatsapp_group.intro": "Tap the button below to join the group and share growing tips with classmates and volunteers.",
-    "data.contact.whatsapp_group.btn": "Join WhatsApp Group",
-    "data.contact.whatsapp_group.btnAria": "Join the student WhatsApp group (opens in a new tab)",
 
     "footer.name": "Kai Tak Residents Hydroponic Farming Project",
     "footer.disclaimer": "This website gives general growing information only. It is not professional farming or medical advice.",

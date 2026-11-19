@@ -7,7 +7,7 @@ Residents scan the QR code printed on the bottle and land on this page. It
 supports the printed instructions, hosts the Cantonese video guides, explains
 troubleshooting, and points to where refills can be bought.
 
-- **Live URL (the QR target):** <https://otters-ct.github.io/hydroponicguideforLPHresidents/?lang=zh-HK#hero>
+- **Live site:** <https://otters-ct.github.io/hydroponicguideforLPHresidents/>
 - **Not** an online shop. No login, no payment, no backend, no app, no account.
 
 ---
@@ -125,10 +125,10 @@ Rules that keep the page working:
 - Do **not** rename or delete a key. `script.js` warns in the browser console
   (`[i18n] missing key "…"`) and falls back to 繁體, which hides mistakes.
 - Keep the key sets of `zh-HK`, `zh-CN` and `en` **identical** (currently
-  **261 keys** each, namespaces `meta.*`, `a11y.*`, `hero.*`, `quick.*`,
+  **241 keys** each, namespaces `meta.*`, `a11y.*`, `hero.*`, `quick.*`,
   `weekly.*`, `video.*`, `trouble.*`, `stats.*`, `harvest.*`, `buy.*`,
-  `data.online_shops.*`, `data.physical_shops.*`, `data.contact.*`, `faq.*`,
-  `contact.*`, `footer.*`, `print.*`).
+  `data.online_shops.*`, `data.physical_shops.*`, `faq.*`, `footer.*`,
+  `print.*`).
 - Write numbers with their units in one string: `"1 吋"` / `"1 英寸"` / `"1 inch"`.
 - If you add a key, add it to all three languages and put the same key on the
   matching element in `index.html` as `data-i18n="your.new.key"`.
@@ -141,12 +141,6 @@ Rules that keep the page working:
 
 - Default language: `DEFAULT_LANG` in `script.js` (currently `zh-HK`).
 - "Last updated": the `footer.updated` key, in all three languages.
-- Contact details: the wording lives under `data.contact.*` in
-  `i18n/translations.js` (`poi_info` = Pok Oi Centre, `whatsapp_group` = the
-  student group). The `tel:21513931`, `wa.me/85298321426` and
-  `chat.whatsapp.com/…` links are plain `href`s in the `#contact` section of
-  `index.html` — change the number in **both** places or the dialler and the
-  label will disagree.
 
 ---
 

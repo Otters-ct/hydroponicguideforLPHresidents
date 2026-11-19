@@ -11,7 +11,7 @@ drawn in it (`#081A12` background, `#11291E` card, `#E8B85B` gold,
 
 | File | What it should show | Recommended size | Where it appears |
 |---|---|---|---|
-| `hero.jpg` | A healthy basil plant growing from an opaque 2 L bottle on a windowsill in a small flat. Dark / low-key lighting. | 1600 × 900 (16:9) | Top of the page, behind the 《居家水培植物指南》 heading. **Used as a CSS background image** in `styles.css` (`.hero`), under a dark green gradient overlay — there is no `<img>` tag for it. |
+| `hero.jpg` | A healthy basil plant growing from an opaque 500 ml / 0.5 L bottle on a windowsill in a small flat. Dark / low-key lighting. | 1600 × 900 (16:9) | Top of the page, behind the 《居家水培植物指南》 heading. **Used as a CSS background image** in `styles.css` (`.hero`), under a dark green gradient overlay — there is no `<img>` tag for it. |
 | `video-1-poster.svg` | Step 1 — hands unboxing the kit: bottle, net pot, sponge, grow cube, seed packet, nutrient bottle. | 640 × 360 (16:9) | Video card 1 「開箱與組裝」. `alt` = `video.a1` |
 | `video-2-poster.svg` | Step 2 — one or two seeds placed in a moist grow cube on a plate. Close-up. | 640 × 360 | Video card 2 「落種子及發芽」. `alt` = `video.a2` |
 | `video-3-poster.svg` | Step 3 — nutrient measured with the bottle cap, poured into water in the bottle. | 640 × 360 | Video card 3 「開營養液及量度瓶蓋」. `alt` = `video.a3` |
