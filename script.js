@@ -9,7 +9,6 @@
    2. Update <html lang>, <title>, meta description, Open Graph tags.
    3. Remember the choice (localStorage) and reflect it in the URL (?lang=).
    4. Announce the change to assistive technology.
-   5. Transcript toggles on the video cards.
    ========================================================================== */
 
 (function () {
@@ -22,7 +21,6 @@
 
   var table = window.I18N || {};
   var current = DEFAULT_LANG;
-  var openTranscripts = {};   /* id -> true when the transcript is expanded */
 
   /* ---------------------------------------------------------------- i18n */
 
@@ -96,18 +94,6 @@
     }
   }
 
-  function applyTranscripts() {
-    var buttons = document.querySelectorAll('.transcript-btn');
-    for (var i = 0; i < buttons.length; i++) {
-      var id = buttons[i].getAttribute('data-transcript');
-      var label = buttons[i].querySelector('[data-i18n]');
-      if (!label) { continue; }
-      var key = openTranscripts[id] ? 'video.transcriptHide' : 'video.transcriptShow';
-      var value = translate(key, current);
-      if (value !== null) { label.textContent = value; }
-    }
-  }
-
   /* ------------------------------------------------------------- storage */
 
   function readStored() {
@@ -167,7 +153,6 @@
     applyAttributes();
     applyMeta();
     applySwitcher();
-    applyTranscripts();
 
     store(code);
     writeUrl(code);
@@ -211,21 +196,6 @@
     });
   }
 
-  function bindTranscripts() {
-    var buttons = document.querySelectorAll('.transcript-btn');
-    for (var i = 0; i < buttons.length; i++) {
-      buttons[i].addEventListener('click', function () {
-        var id = this.getAttribute('data-transcript');
-        var panel = document.getElementById(id);
-        var isOpen = !!openTranscripts[id];
-        openTranscripts[id] = !isOpen;
-        this.setAttribute('aria-expanded', String(!isOpen));
-        if (panel) { panel.hidden = isOpen; }
-        applyTranscripts();
-      });
-    }
-  }
-
   function init() {
     if (!table[DEFAULT_LANG]) {
       if (window.console && console.warn) {
@@ -234,7 +204,6 @@
       return;
     }
     bindSwitcher();
-    bindTranscripts();
     setLang(initialLang(), { initial: true, silent: true });
   }
 

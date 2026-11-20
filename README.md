@@ -24,7 +24,7 @@ because translations are a plain `.js` file (not JSON + `fetch`).
 ```
 index.html                 the only page (single-page site with anchor links)
 styles.css                 all styling (CSS variables, mobile-first, print sheet)
-script.js                  language switching + transcript toggles (progressive enhancement)
+script.js                  language switching (progressive enhancement)
 i18n/translations.js       ALL text in all three languages  <- the file editors touch
 assets/                    labelled placeholder images (see assets/README.md)
 README.md                  this file
@@ -97,16 +97,21 @@ descriptive fields are translated. Addresses are romanised for `en`
 
 ### 2) Add or change a video
 
-The six cards live in `index.html` in the `#videos` section. Each card has a
-poster image, a title, a duration, a written summary and a transcript.
+The two video cards live in `index.html` in the `#videos` section. Each card
+embeds a YouTube video in a responsive 16:9 `<iframe>` (`.video-embed`) and,
+below it, a title, a duration and a written summary of the steps.
 
-- Drop the new poster into `assets/` and change the `<img src="...">`.
-- Titles / summaries / transcripts are the `video.t1…t6`, `video.s1…s6` and
-  `video.x1…x6` keys in `i18n/translations.js` (all three languages).
-- **There is no video player yet.** If a video file does not exist, the card
-  shows `影片準備中` plus the written summary — never a broken player. When
-  the video is ready, add a `<video>` element or a link to the hosted file,
-  then delete the `video.preparing` badge from that card.
+- To swap a video, change the `src` on that card's `<iframe>`. Use the
+  `https://www.youtube.com/embed/<VIDEO_ID>` form — a `youtu.be/...` short link
+  will not render inside an iframe. Do **not** add `autoplay`, and keep
+  `allowfullscreen` so residents can watch in full screen.
+- Titles, durations and summaries are the `video.v1t` / `video.v1d` /
+  `video.v1s` and `video.v2t` / `video.v2d` / `video.v2s` keys in
+  `i18n/translations.js` (all three languages). Each iframe's `title` (read
+  out by screen readers) comes from `video.v1aria` / `video.v2aria`.
+- The section used to show poster images (`assets/video-*-poster.svg`) and
+  click-to-open transcripts. Both are gone; the poster files are no longer
+  referenced anywhere.
 
 ### 3) Change a price-free product name
 
@@ -125,7 +130,7 @@ Rules that keep the page working:
 - Do **not** rename or delete a key. `script.js` warns in the browser console
   (`[i18n] missing key "…"`) and falls back to 繁體, which hides mistakes.
 - Keep the key sets of `zh-HK`, `zh-CN` and `en` **identical** (currently
-  **241 keys** each, namespaces `meta.*`, `a11y.*`, `hero.*`, `quick.*`,
+  **215 keys** each, namespaces `meta.*`, `a11y.*`, `hero.*`, `quick.*`,
   `weekly.*`, `video.*`, `trouble.*`, `stats.*`, `harvest.*`, `buy.*`,
   `data.online_shops.*`, `data.physical_shops.*`, `faq.*`, `footer.*`,
   `print.*`).
@@ -203,19 +208,46 @@ deployed site.
 
 ## 8. Deploy to GitHub Pages
 
-See the numbered steps in the project handover note, or in short:
+The live site is published from the repository
+<https://github.com/otters-ct/hydroponicguideforLPHresidents>. GitHub Pages
+serves the **repository root** of the `main` branch, so whatever is committed
+to the top level of that repo is what residents see. There is no build step —
+just commit the files and push.
+
+**Route A — upload in the browser (no tools to install)**
+
+1. Open the repo on GitHub and go to the `main` branch.
+2. **Add file → Upload files**, then drag the changed files
+   (`index.html`, `styles.css`, `script.js`, and the `i18n/` and `assets/`
+   folders) into the window. Dragging a folder uploads everything inside it.
+3. Write a short commit message (e.g. `Update video guides`) and click
+   **Commit changes**. Pages redeploys in about a minute.
+
+**Route B — with Git installed (command line)**
+
+If this folder is already the clone:
+
+```bash
+git add index.html styles.css script.js i18n/translations.js README.md
+git commit -m "Update video guides"
+git push origin main
+```
+
+If it is not a clone yet, point it at the existing repo first (do **not**
+re-`git init` the repo that already exists on GitHub):
 
 ```bash
 git init
-git add index.html styles.css script.js i18n/translations.js assets README.md
-git commit -m "Add trilingual home hydroponics guide"
 git branch -M main
-git remote add origin https://github.com/idontknowar/home-hydroponic-for-its.git
+git remote add origin https://github.com/otters-ct/hydroponicguideforLPHresidents.git
+git pull origin main --rebase   # bring in the current live files
+git add index.html styles.css script.js i18n/translations.js README.md
+git commit -m "Update video guides"
 git push -u origin main
 ```
 
-Then on GitHub: **Settings → Pages → Source: Deploy from a branch → `main` /
-`/ (root)` → Save**. After about a minute the site is at
+Pages stays on **Settings → Pages → Source: Deploy from a branch → `main` /
+`/ (root)`**; you only set that once. After about a minute the site is at
 <https://otters-ct.github.io/hydroponicguideforLPHresidents/>.
 
 Re-test after every edit: hard-refresh the live URL (or open it on a phone),
